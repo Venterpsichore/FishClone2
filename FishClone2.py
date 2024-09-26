@@ -37,6 +37,9 @@ while running:
             if event.key in key_dict:
                 background = key_dict [event.key]
 
+                caption = 'background color is newly ' + str(background)
+                pygame.display.set_caption(caption)
+
     screen.fill(background)
     pygame.display.update()            
 
