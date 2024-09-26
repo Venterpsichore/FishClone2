@@ -17,6 +17,11 @@ plum = (221, 160, 221, 255)
 thistle2 = (238, 210, 238, 255)
 darkorange3 = (205, 102, 0, 255)
 
+key_dict = {K_s:darkseagreen2, K_c:chocolate1, K_k:cornsilk2, 
+    K_o:mediumorchid2, K_e:orangered1, K_b:slateblue1, K_p:plum,
+    K_l:olivedrab1, K_t:thistle2, K_g:magenta2, K_i:midnightblue,
+    K_d:darkorange3, K_n:mediumspringgreen, K_y:slategray1}
+
 # pygame setup
 pygame.init()
 screen = pygame.display.set_mode((640, 240))
@@ -28,41 +33,9 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_s:
-                background = darkseagreen2
-            elif event.key == pygame.K_c:
-                background = chocolate1
-            elif event.key == pygame.K_k:
-                background = cornsilk2
-            elif event.key == pygame.K_o:
-                background = mediumorchid2
-            elif event.key == pygame.K_e:
-                background = orangered1
-            elif event.key == pygame.K_b:
-                background = slateblue1
-            elif event.key == pygame.K_p:
-                background = plum
-            elif event.key == pygame.K_l:
-                background = olivedrab1
-            elif event.key == pygame.K_t:
-                background = thistle2
-            elif event.key == pygame.K_g:
-                background = magenta2
-            elif event.key == pygame.K_i:
-                background = midnightblue
-            elif event.key == pygame.K_d:
-                background = darkorange3
-            elif event.key == pygame.K_n:
-                background = mediumspringgreen
-            elif event.key == pygame.K_y:
-                background =slategray1
-
-            
-            
-
-        print(event)
-
+        if event.type == KEYDOWN:
+            if event.key in key_dict:
+                background = key_dict [event.key]
 
     screen.fill(background)
     pygame.display.update()            
