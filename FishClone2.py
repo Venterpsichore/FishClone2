@@ -22,6 +22,13 @@ key_dict = {K_s:darkseagreen2, K_c:chocolate1, K_k:cornsilk2,
     K_l:olivedrab1, K_t:thistle2, K_g:magenta2, K_i:midnightblue,
     K_d:darkorange3, K_n:mediumspringgreen, K_y:slategray1}
 
+size = 640, 320
+width, height = size
+
+ball = pygame.image.load("Rugged ball.jpg")
+rect = ball.get_rect()
+speed = [2, 2]
+
 # pygame setup
 pygame.init()
 screen = pygame.display.set_mode((640, 240))
@@ -43,4 +50,9 @@ while running:
     screen.fill(background)
     pygame.display.update()            
 
+rect = rect.move(speed)
+if rect.left < 0 or rect.right > width:
+    speed[0] = -speed[0]
+if rect.top < 0 or rect.bottom > height: 
+    speed[1] = -speed[1]
 pygame.quit()
