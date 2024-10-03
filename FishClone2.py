@@ -25,13 +25,13 @@ key_dict = {K_s:darkseagreen2, K_c:chocolate1, K_k:cornsilk2,
 size = 640, 320
 width, height = size
 
-ball = pygame.image.load("Rugged ball.jpg")
+ball = pygame.image.load("Rugged_ball.jpg")
 rect = ball.get_rect()
 speed = [2, 2]
 
 # pygame setup
 pygame.init()
-screen = pygame.display.set_mode((640, 240))
+screen = pygame.display.set_mode((800, 500))
 
 
 running = True
@@ -46,13 +46,17 @@ while running:
 
                 caption = 'background color is newly ' + str(background)
                 pygame.display.set_caption(caption)
+        
+    rect = rect.move(speed)
+    if rect.left < 0 or rect.right > width:
+        speed[0] = -speed[0]
+    if rect.top < 0 or rect.bottom > height: 
+        speed[1] = -speed[1]
 
     screen.fill(background)
+    pygame.draw.rect(screen, background, rect, 1)
+    screen.blit(ball, rect)
     pygame.display.update()            
 
-rect = rect.move(speed)
-if rect.left < 0 or rect.right > width:
-    speed[0] = -speed[0]
-if rect.top < 0 or rect.bottom > height: 
-    speed[1] = -speed[1]
+
 pygame.quit()
