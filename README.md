@@ -1,6 +1,9 @@
 # FishClone2
 
-'''
+My intention is to practice Python as I create a RPG centered around sea monsters. I would like to work on this more to create more area to travel, a motley of aquatic species, and dialogue to 
+
+Adding the movement of a ball to simulate player avatar movement and background correspondent to different keys, simulating a plot point or dialogue change. 
+
 '''
 chocolate1 = (255, 127, 36, 255)
 cornsilk2 = (238, 232, 205, 255)
@@ -23,4 +26,6 @@ key_dict = {K_s:darkseagreen2, K_c:chocolate1, K_k:cornsilk2,
     K_l:olivedrab1, K_t:thistle2, K_g:magenta2, K_i:midnightblue,
     K_d:darkorange3, K_n:mediumspringgreen, K_y:slategray1}
     '''
-'''
+
+LinkedIn: www.linkedin.com/in/jasevillarreal
+Email: charybdiskylla@gmail.com
