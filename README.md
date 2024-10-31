@@ -1,6 +1,7 @@
 # FishClone2
 
 '''
+'''
 chocolate1 = (255, 127, 36, 255)
 cornsilk2 = (238, 232, 205, 255)
 darkseagreen2 = (180, 238, 180, 255)
@@ -22,3 +23,4 @@ key_dict = {K_s:darkseagreen2, K_c:chocolate1, K_k:cornsilk2,
     K_l:olivedrab1, K_t:thistle2, K_g:magenta2, K_i:midnightblue,
     K_d:darkorange3, K_n:mediumspringgreen, K_y:slategray1}
     '''
+'''
