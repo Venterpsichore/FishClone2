@@ -34,7 +34,19 @@ speed = [2, 2]
 '''
 
 '''
+running = True
+background = grey99
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+        if event.type == KEYDOWN:
+            if event.key in key_dict:
+                background = key_dict [event.key]
 
+                caption = 'background color is newly ' + str(background)
+                pygame.display.set_caption(caption)
 '''
+
 LinkedIn: www.linkedin.com/in/jasevillarreal
 Email: charybdiskylla@gmail.com
