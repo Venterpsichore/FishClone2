@@ -27,5 +27,14 @@ key_dict = {K_s:darkseagreen2, K_c:chocolate1, K_k:cornsilk2,
     K_d:darkorange3, K_n:mediumspringgreen, K_y:slategray1}
     '''
 
+'''
+all = pygame.image.load("Rugged_ball.jpg")
+rect = ball.get_rect()
+speed = [2, 2]
+'''
+
+'''
+
+'''
 LinkedIn: www.linkedin.com/in/jasevillarreal
 Email: charybdiskylla@gmail.com
