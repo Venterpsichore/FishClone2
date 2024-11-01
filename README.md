@@ -1,7 +1,9 @@
 # FishClone2
 
-My intention is to practice Python as I create a RPG centered around sea monsters. I would like to work on this more to create more area to travel, a motley of aquatic species, and dialogue to 
+My intention is to practice Python as I create a RPG centered around sea monsters. I would like to work on this more to create more area to travel, a motley of aquatic species, and dialogue to incorporate decision-making, choices, and voice.
+I would like to work with others on games as well as they pertain to horror, role-playing, fantasy, mystery, and sci-fi.
 
+*************************************************************************************************
 Adding the movement of a ball to simulate player avatar movement and background correspondent to different keys, simulating a plot point or dialogue change. 
 
 '''
@@ -47,6 +49,8 @@ while running:
                 caption = 'background color is newly ' + str(background)
                 pygame.display.set_caption(caption)
 '''
+
+To contribute or for any questions, feel free to message me at the following links.
 
 LinkedIn: www.linkedin.com/in/jasevillarreal
 Email: charybdiskylla@gmail.com
